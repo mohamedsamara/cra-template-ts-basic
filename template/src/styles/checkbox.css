@@ -1,0 +1,20 @@
+.checkbox {
+  display: inline-block;
+  position: relative;
+}
+
+.input-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+input[type='checkbox']:focus + label {
+  box-shadow: none;
+  outline: 1px dotted;
+}

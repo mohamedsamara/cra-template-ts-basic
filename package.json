@@ -1,0 +1,26 @@
+{
+  "name": "cra-template-ts-basic",
+  "version": "1.0.0",
+  "description": "CRA TS Basic Template",
+  "main": "template.json",
+  "keywords": [
+    "cra",
+    "react",
+    "typescript",
+    "eslint",
+    "prettier"
+  ],
+  "author": "Mohamed Samara (https://github.com/mohamedsamara)",
+  "license": "MIT",
+  "homepage": "https://github.com/mohamedsamara/cra-template-ts-basic#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohamedsamara/cra-template-ts-basic.git"
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "bugs": {
+    "url": "https://github.com/mohamedsamara/cra-template-ts-basic/issues"
+  }
+}
