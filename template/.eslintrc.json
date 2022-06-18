@@ -6,7 +6,8 @@
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:jest/recommended",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -16,6 +17,11 @@
     "ecmaVersion": 2018,
     "project": "./tsconfig.json",
     "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true // Add this line!
   },
   "plugins": ["eslint-plugin-import-helpers"],
   "rules": {
@@ -40,17 +46,6 @@
     "consistent-return": "off",
     "react/function-component-definition": "off",
     "@typescript-eslint/no-explicit-any": "off",
-    "import-helpers/order-imports": [
-      "error",
-      {
-        "alphabetize": {
-          "ignoreCase": true,
-          "order": "asc"
-        },
-        "groups": ["/^react/", "module", ["parent", "sibling", "index"]]
-        // "newlinesBetween": "always"
-      }
-    ],
     "no-multiple-empty-lines": [
       "error",
       {
@@ -72,20 +67,10 @@
         "custom": "ignore"
       }
     ],
-    "react/jsx-sort-props": [
-      "error",
-      {
-        "ignoreCase": true
-      }
-    ],
     "react/react-in-jsx-scope": "off",
-    "sort-imports": [
-      "error",
-      {
-        "ignoreCase": true,
-        "ignoreDeclarationSort": true
-      }
-    ]
+    "react/no-array-index-key": "off",
+    "no-promise-executor-return": "off",
+    "no-plusplus": "off"
   },
   "settings": {
     "react": {

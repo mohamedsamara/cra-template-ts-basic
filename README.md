@@ -27,3 +27,5 @@ yarn create react-app your-project-name --template ts-basic
 - `yarn lint` - runs linter in the project files based on eslint rules
 
 - `yarn lint:fix` - rus linter and fixes errors when possible
+
+- `yarn format` - runs prettier in the project files based on .prettierrc rules
